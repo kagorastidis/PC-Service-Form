@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body style=" background:#222222;">
+<bt><br>
+<center><h1>Service Form</h1><hr></center>
+
+<form action="php/submit.php" method= "post">
+<table align = "center" style="width:75%; margin-top:65px; border:1px solid black; ">
+
+<tr>
+  <th>Item</th>		
+  <th>Customer</th>
+  <th>Phone</th>
+
+
+  
+</tr>
+
+<tr>
+  <td align="center"><INPUT maxLength=75 id="eidos" name="eidos" required></td>
+  <td align="center"><INPUT maxLength=75 id="customer" name="customer" required></td>
+  <td align="center"><INPUT maxLength=75 id="phone" name="phone" required></td>
+</tr>
+<table align = "center" style="width:70%; margin-top:15px; border:1px solid black; ">
+<tr>
+<th>Customer's Description</th>
+<th>Comments</th>
+<tr>
+  <td align="center"><textarea rows="5" cols="10" id ="vlavi" name="vlavi" required></textarea></td>
+  <td align="center"><textarea rows="5" cols="10" id ="sxolia" name ="sxolia"></textarea></td>
+  <tr>
+  </table>
+  <center><input type="submit" value="Submit Service form" id="btn"></center>
+  
+  </form><br>
+ 
+  <hr>
+<br><br><br>
+<center><a href="php/update.php" target="_top"><button type="button" id= "btn">Give fixed item back</button><center>
+<center><a href="php/summary.php" target="_top"><button " type="button" id= "btn">Show All</button><center></a>
+<br><br><br>
+<p id ="demo"style="text-align:center;color:#ffffff;font-style:italic;"></p>
+ <script>
+var d = new Date();
+document.getElementById("demo").innerHTML = d.toDateString();
+</script>
+</body>
+</html>
+  
+  
+  
+  
+  
+  
+  
